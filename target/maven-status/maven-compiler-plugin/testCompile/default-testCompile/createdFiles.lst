@@ -1,0 +1,6 @@
+com\servico\pagamento\servico\impl\CompradorServicoImplTest.class
+com\servico\pagamento\servico\impl\ClienteServicoImplTest.class
+com\servico\pagamento\servico\impl\PagamentoServicoImplTest.class
+com\servico\pagamento\servico\impl\CartaoServicoImplTest.class
+com\servico\pagamento\PagamentoApplicationTests.class
+com\servico\pagamento\servico\impl\BoletoServicoImplTest.class
