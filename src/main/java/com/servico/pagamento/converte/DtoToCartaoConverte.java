@@ -11,12 +11,12 @@ public class DtoToCartaoConverte implements Converter<CartaoDTO, CartaoCredito> 
 
 	@Override
 	public CartaoCredito convert(CartaoDTO cartaoDTO) {
-		CartaoCredito cartao = new CartaoCredito();
-		cartao.setDataValidade(cartaoDTO.getDataValidade());
-		cartao.setName(cartaoDTO.getNome());
-		cartao.setNumero(cartaoDTO.getNumero());
-		cartao.setCvv(cartaoDTO.getCvv());
-		return cartao;
+		// Usando o Java moderno para mapear os campos de forma eficiente
+		return new CartaoCredito(
+				cartaoDTO.nome(),
+				cartaoDTO.numero(),
+				cartaoDTO.cvv(),
+				cartaoDTO.dataValidade()
+		);
 	}
-
 }
